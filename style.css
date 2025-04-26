@@ -294,6 +294,10 @@ h3 {
   color: var(--color-secondary);
 }
 
+.form_flex label {
+  margin-top: 10px;
+}
+
 .platebni_metody {
   margin-left: 40px;
 }
@@ -334,10 +338,6 @@ h3 {
   width: 75%;
 }
 
-.form_flex {
-  display: flex;
-}
-
 .poznamka_objednavka {
   display: block;
   width: 100%;
@@ -360,6 +360,7 @@ h3 {
 
 /*--- Jídlení lístek ---*/
 .listek {
+  width: 90%;
   margin: 50px 10px;
 }
 
@@ -368,7 +369,7 @@ h3 {
 }
 
 .tabulka {
-  width: 100%;
+  width: 95%;
   margin-bottom: 30px;
   border: 1px solid var(--color-secondary);
   border-radius: var(--radius);
@@ -384,20 +385,20 @@ th {
 }
 
 .mnozstvi {
-  width: 15%;
+  width: 10%;
 }
 
 .cena {
-  width: 17%;
+  width: 15%;
 }
 
-.polozka {
-  width: 68%;
+/* .polozka {
+  width: 85%;
 }
 
 .polozka_obj {
-  width: 58%;
-}
+  width: 75%;
+}  */
 
 
 .kusy {
@@ -556,6 +557,11 @@ th {
     margin-right: 10px;
     width: 100%;
   }
+
+  .form_flex {
+    display: flex;
+  }
+
 
   .form_flex,
   .formular__osoby,
