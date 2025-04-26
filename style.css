@@ -14,3 +14,656 @@ html { box-sizing: border-box; }
 
   --radius: 12px;
 }
+
+/*Fonty:
+h1 a h2
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  text
+.dm-sans-<uniquifier> {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/  
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: var(--color-text);
+  background-color: var(--color-section-bg);
+  margin: 0;
+}
+
+.stranka {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0;  
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+
+.header {
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  
+}
+
+.header img {
+  height: 35px;
+}
+
+.header nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 100vw;
+  margin: 0;
+}
+
+.header nav a:hover {
+  background-color: var(--color-secondary-bright);
+}
+
+.header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.hero {
+  background-image: url(images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  padding: 100px 0;
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.hero h1 {
+  padding: 0;
+  margin: 30px;
+}
+.hero p {
+  padding: 0;
+  margin: 0;
+}
+
+.tlacitko {
+  margin-top: 40px;
+}
+
+.tlacitko a {
+  display: inline-block;
+  color: var(--color-section-bg);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px 30px;
+  font-size: 1rem;
+  background-color: var(--color-primary);
+  border-radius: 100vw;
+}
+
+.tlacitko a:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.jidelni_listek {
+  text-align: center;
+  padding: 50px 0;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.jidelni_listek h2 {
+  margin-bottom: 40px;
+  color: var(--color-secondary);
+}
+
+.jidlo {
+  border: 1px solid var(--color-secondary-light);
+  border-radius: var(--radius);
+  margin: 20px 50px;
+  padding: 30px 20px;
+}
+
+.jidlo a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.jidlo a:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+
+.jidelni_listek h3 {
+  color: var(--color-secondary);
+  font-weight: 800;
+}
+ 
+.rozvoz {
+  background-color: var(--color-secondary-bright);
+  padding: 40px 50px;
+  margin: 0;
+  
+}
+
+.rozvoz__img {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.rozvoz__img img {
+  width: 100%;
+  border-radius: var(--radius);
+  
+}
+ .rozvoz__seznam ul{ 
+  padding: 0;
+  margin: 0;
+}
+.rozvoz__seznam li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--color-secondary-dark);
+  gap: 10px;
+  padding: 0;
+}
+
+.rozvoz__seznam img {
+  width: 30px;
+}
+
+.footer {
+  padding: 50px 60px;
+  background-color: var(--color-footer-bg);
+  color: var(--color-secondary-light);
+}
+
+.footer__adresa {
+  margin-bottom: 20px;
+}
+
+.footer img {
+  height: 40px;
+}
+
+.footer__menu ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  align-items: start;
+}
+
+.footer__menu li {
+  list-style: none;
+}
+
+.footer__menu a {
+  color: var(--color-secondary-bright);
+  
+}
+
+.footer__menu a:hover {
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 0.8em;
+}
+
+/*--- Rezervační formulář ---*/
+.rezervace_hero,
+.listek_hero,
+.objednavka_hero {
+  background-image: url(images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30%;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.formular h3,
+.platba h3 {
+  color: var(--color-secondary);
+  margin-left: 10px;
+}
+
+.formular {
+  max-width: 500px;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.form {
+  margin-right: 10px;
+  width: 100%;
+}
+
+.form_flex,
+.formular__osoby,
+.formular__rezervace_tlacitko,
+.poznamka_objednavka {
+  margin: 20px 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.platebni_metody {
+  margin-left: 40px;
+}
+
+.souhlas_obj {
+  margin: 30px 0 0 40px;
+}
+
+.rezervace__souhlas{
+  margin: 30px 0 0 25px;
+}
+
+.souhlas_obj a,
+.rezervace__souhlas a {
+  color: black;
+}
+
+
+.form input,
+.form label,
+.form textarea {
+  display: block;
+}
+
+
+
+.form input {
+  border: 1px solid var(--color-secondary-light);
+  border-radius: 5px;
+  height: 1.5rem;
+  padding: 10px;
+}
+
+.form textarea {
+  border: 1px solid var(--color-secondary-light);
+  border-radius: 5px;
+  padding: 10px;
+  width: 75%;
+}
+
+.form_flex {
+  display: flex;
+}
+
+.poznamka_objednavka {
+  display: block;
+  width: 100%;
+}
+
+.formular__rezervace_tlacitko button {
+  padding: 15px 30px;
+  background-color: var(--color-primary);
+  border-style: none;
+  border-radius: 100vw;
+  color: var(--color-section-bg);
+  font-size: 1rem;
+  font-weight: 600;
+  /* margin: 20px 0; */
+
+}
+.formular__rezervace_tlacitko button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/*--- Jídlení lístek ---*/
+.listek {
+  margin: 50px 10px;
+}
+
+.listek h3 {
+  color: var(--color-secondary);
+}
+
+.tabulka {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--radius);
+}
+
+th,
+td {
+  padding: 5px 20px;
+}
+
+th {
+  text-align: left;
+}
+
+.mnozstvi {
+  width: 15%;
+}
+
+.cena {
+  width: 17%;
+}
+
+.polozka {
+  width: 68%;
+}
+
+.polozka_obj {
+  width: 58%;
+}
+
+
+.kusy {
+  width: 10%;
+  padding: 0;
+  text-align: center;
+}
+
+.formular_objednavka {
+  display: flex;
+  justify-content: center;
+}
+
+.formular_objednavka input {
+  
+  width: 2.5rem;
+  text-align: center;
+}
+
+/*--- O nás --- */
+.onas {
+  text-align: center;
+  margin: 50px 20px;
+}
+
+.onas h3 {
+  color: var(--color-secondary);
+}
+
+/*--- Kontakt ---*/
+
+.kontakt {
+  margin: 50px auto;
+  padding-left: 60px;
+}
+
+.kontakt__zvyrazneni {
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+  font-weight: 500;
+  text-decoration:underline;
+  padding-right: 20px;
+}
+
+.kontakt__bezzvyrazneni {
+  font-size: 1.125rem;
+}
+
+.kontakt__adresa {
+  margin: 20px 0;
+}
+
+/* ----------- Tablety ---------- */
+
+@media (min-width: 768px) {
+  .stranka {
+    max-width: 1100px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+  }
+
+  .header img {
+    height: 45px;
+  }
+
+  .header a {
+    padding: 10px 20px;
+  }
+
+
+  .hero {
+    padding: 120px 0;
+  }
+
+  .jidelni_listek {
+    padding: 80px 0;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+
+  .jidelni_listek__karty {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: center;
+    
+  }
+
+  .jidlo {
+    width: calc((100% - 120px)/2);
+    margin: 20px 15px;
+   
+  }
+  .rozvoz__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+ 
+  }
+ 
+  
+  .rozvoz__img {
+    width: 48%;
+    margin-left: 20px;
+    
+  }
+
+  .rozvoz__seznam {
+    width: 50%;
+    padding: 50px;
+  }
+
+
+  .tlacitko a {
+    font-size: 1.125rem;
+    padding: 20px 40px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  /*--- Formulář ---*/
+  .formular {
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 0;
+  }
+
+  .formular label {
+    font-size: 1.25rem;
+  }
+
+  .formular input {
+    height: 2rem;
+    font-size: 1.25rem;
+
+  }
+
+  .rezervace__souhlas input {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .form {
+    margin-right: 10px;
+    width: 100%;
+  }
+
+  .form_flex,
+  .formular__osoby,
+  .formular__rezervace_tlacitko,
+  .rezervace__souhlas,
+  .poznamka_objednavka {
+    margin: 15px auto;
+    
+
+  }
+
+  .formular__rezervace_tlacitko {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+  }
+
+  .formular__rezervace_tlacitko button {
+    padding: 20px 40px;
+    background-color: var(--color-primary);
+    border-style: none;
+    border-radius: 100vw;
+    color: var(--color-section-bg);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 30px auto; 
+
+  }
+
+  /*--- Jídelní lístek ---*/
+  .listek {
+    max-width: 1100px;
+    margin: 0 auto 80px auto;
+  }
+
+  .poznamka_objednavka textarea {
+    font-size: 1.2rem;
+    width: 95%;
+    
+  }
+
+  .platebni_metody {
+    margin-left: 0px;
+  
+    
+  }
+  
+  .souhlas_obj {
+    margin: 20px 0;
+  }
+
+  .souhlas_obj input {
+    height: 2rem;
+    width: 1.5rem;
+  }
+
+  .umisteni_platby,
+  .souhlas_obj {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .umisteni_platby input {
+    width: 1.1rem;
+  }
+
+   /*--- Kontakt ---*/
+   .kontakt {
+    width: 400px;
+    margin: 70px auto;
+    
+  }
+
+  .kontakt__zvyrazneni {
+    font-size: 1.5rem;
+  }
+
+  .kontakt__bezzvyrazneni {
+    font-size: 1.3rem;
+  }
+
+}
+
+ 
+
+/* ---------Počítače-------- */
+@media (min-width: 1100px) {
+  .stranka {
+    max-width: 100%;
+  }
+
+  .header a {
+    padding: 10px 30px;
+  }
+
+  .hero {
+    padding: 150px 0;
+  }
+
+  .jidelni_listek__karty {
+    margin: 15px;
+  }
+  .jidlo {
+    width: calc((100% - 120px)/4);
+    
+  }
+
+}
+
+

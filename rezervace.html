@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurace Bříško</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<html>
+<body>
+  <div class="stranka">
+
+    <!-- HLAVIČKA -->
+    <header class="header">
+      <a href="index.html"><img class="logo" src="images/logo.svg" alt="Restaurace Bříško"></a>
+
+      <nav>
+        <a class="nav__link" href="listek.html">Jídelní lístek</a>
+        <a class="nav__link" href="onas.html">O nás</a>
+        <a class="nav__link" href="kontakt.html">Kontakt</a>
+        <a class="nav__link" href="rezervace.html">Rezervace</a>
+      </nav>
+  </header>
+
+    <!-- sekce HERO -->
+  <section class="rezervace_hero">
+    <h1>Rezervace</h1>
+    <p>Budeme se těšit na Vaši návštěvu.</p>
+  </section>
+  <!-- FORMULÁŘ REZERVACE -->
+   <form class="formular">
+    <div class="form_flex formular__CeleJmeno">
+        <div class="form formular__jmeno">
+            <label for="jmeno">Jméno</label>
+            <input type="text" name="jmeno" id="jmeno">
+        </div>
+        <div class="form formular__prijmeni">
+            <label for="prijmeni">Příjmení</label>
+            <input type="text" name="prijmeni" id="prijmeni">
+        </div>
+    </div>
+    <div class="form_flex formular__kontakt">
+        <div class="form formular__email">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form formular__tel">
+            <label for="tel">Telefon</label>
+            <input type="tel" name="tel" id="tel" placeholder="+420" required>
+        </div>
+    </div>
+    <div class="form_flex formular__CasRezervace">
+        <div class="form formular__datum">
+            <label for="datum">Začátek rezervace</label>
+            <input type="datetime-local" name="datum" id="datum" required>
+        </div>
+        <div class="form formular__hodiny">
+            <label for="hodiny">Počet hodin</label>
+            <input type="number" name="hodiny" id="hodiny" min="1" max="6" required>
+        </div>
+    </div>
+        <div class="form formular__osoby">
+            <label for="osoby">Počet osob</label>
+            <input type="number" name="osoby" id="osoby" min="1" max="8" required>
+        </div>
+      <div class="rezervace__souhlas">
+            <input type="checkbox" name="rezerv_souhlas" id="rezerv_souhlas" value="souhlas">
+            <label for="rezerv_souhlas">Souhlasím s <a href="#">všeobecnými podmínkami</a></label>
+        </div>
+        <div class="formular__rezervace_tlacitko">  
+            <button type="Submit">Odeslat</button>
+        </div>
+
+   </form>
+
+  
+  <!-- PATIČKA -->
+  <footer class="footer">
+     <div class="footer__adresa">
+      <img src="images/logo-footer.svg" alt="Restaurace Bříško">
+     <p>
+        Restaurace Bříško<br>
+        U pupíku 42<br>
+        123 45 Najedlov
+      </p>
+    </div>
+    <div class="footer__zapati">
+      <div class="footer__menu">
+        <ul>
+          <li><a href="listek.html">Jídelní lístek</a></li>
+          <li><a href="onas.html">O nás</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="rezervace.html">Rezervace</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2025 HTML a CSS kurz od Czechitas</p>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

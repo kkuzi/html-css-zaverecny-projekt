@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurace Bříško</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<html>
+<body>
+  <div class="stranka">
+
+    <!-- HLAVIČKA -->
+    <header class="header">
+      <a href="index.html"><img class="logo" src="images/logo.svg" alt="Restaurace Bříško"></a>
+
+      <nav>
+        <a class="nav__link" href="listek.html">Jídelní lístek</a>
+        <a class="nav__link" href="onas.html">O nás</a>
+        <a class="nav__link" href="kontakt.html">Kontakt</a>
+        <a class="nav__link" href="rezervace.html">Rezervace</a>
+      </nav>
+  </header>
+
+<!-- sekce HERO -->
+  <section class="objednavka_hero">
+    <h1>Objednávka</h1>
+    <p>Vy si vyberete, my přivezeme.</p>
+  </section>
+<!-- Sekce Jídlení lístek -->
+<section class="listek">
+    <h3 id="snidane">Snídaně</h3>
+     <table class="tabulka">
+         <thead>
+             <tr>
+                 <th>Množství</th>
+                 <th></th>
+                 <th>Cena</th>
+                 <th class="kusy">Ks</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td class="mnozstvi">50g</td>
+                 <td class="polozka_obj">Pivní pes</td>
+                 <td class="cena">29 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">2 ks</td>
+                 <td class="polozka_obj_obj">Vejce na tvrdo s čerstvým celozrnným chlebem</td>
+                 <td class="cena">120 Kč</td>
+                 <td class="Kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="Kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">2 ks</td>
+                 <td class="polozka_obj_obj">Vejce míchaná s čerstvým celozrnným chlebem</td>
+                 <td class="cena">130 Kč</td>
+                 <td class="Kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="Kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">1 ks</td>
+                 <td class="polozka_obj_obj">Krajíc chleba se šunkou z právě zabitého prasete</td>
+                 <td class="cena">180 Kč</td>
+                 <td class="Kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="Kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+ 
+         </tbody>
+     </table>
+     <h3 id="hlavni_jidlo">Hlavní jídlo</h3>
+     <table class="tabulka">
+         <thead>
+             <tr>
+                 <th>Množství</th>
+                 <th></th>
+                 <th>Cena</th>
+                 <th class="kusy">Ks</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td class="mnozstvi">300g</td>
+                 <td class="polozka_obj">Guláš se šesti</td>
+                 <td class="cena">145 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">400g</td>
+                 <td class="polozka_obj">Vepřo knedlo zelo</td>
+                 <td class="cena">180 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">250g</td>
+                 <td class="polozka_obj">Kuřecí plátek s broskví</td>
+                 <td class="cena">200 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">350g</td>
+                 <td class="polozka_obj">Pizza Hawai s ananasem</td>
+                 <td class="cena">185 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">250g</td>
+                 <td class="polozka_obj">Kuřecí řízek</td>
+                 <td class="cena">175 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">250g</td>
+                 <td class="polozka_obj">Vepřový řízek</td>
+                 <td class="cena">180 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+         </tbody>
+     </table>
+     <h3 id="gril">Gril</h3>
+     <table class="tabulka">
+         <thead>
+             <tr>
+                 <th>Množství</th>
+                 <th></th>
+                 <th>Cena</th>
+                 <th class="kusy">Ks</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td class="mnozstvi">250g</td>
+                 <td class="polozka_obj">Kuřecí steak</td>
+                 <td class="cena">200 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">250g</td>
+                 <td class="polozka_obj">Hovězí steak z pravé svíčkové</td>
+                 <td class="cena">680 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">200g</td>
+                 <td class="polozka_obj">Hermelín na grilu</td>
+                 <td class="cena">170 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+         </tbody>
+     </table>
+ 
+     <h3>Přílohy</h3>
+     <table class="tabulka">
+         <thead>
+             <tr>
+                 <th>Množství</th>
+                 <th></th>
+                 <th>Cena</th>
+                 <th class="kusy">Ks</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td class="mnozstvi">200g</td>
+                 <td class="polozka_obj">Vařené brambory</td>
+                 <td class="cena">40 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">200g</td>
+                 <td class="polozka_obj">Krokety</td>
+                 <td class="cena">50 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">200g</td>
+                 <td class="polozka_obj">Hranolky</td>
+                 <td class="cena">45 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">200</td>
+                 <td class="polozka_obj">Grilovaná zelenina</td>
+                 <td class="cena">60 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">1 ks</td>
+                 <td class="polozka_obj">Bramboráčky</td>
+                 <td class="cena">25 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">1 ks</td>
+                 <td class="polozka_obj">Krajíc chleba</td>
+                 <td class="cena">10 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+         </tbody>
+     </table>
+     <h3 id="napoje">Nápoje</h3>
+     <table class="tabulka">
+         <thead>
+             <tr>
+                 <th>Množství</th>
+                 <th></th>
+                 <th>Cena</th>
+                 <th class="kusy">Ks</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td class="mnozstvi">1l</td>
+                 <td class="polozka_obj">Voda</td>
+                 <td class="cena">50 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">3dcl</td>
+                 <td class="polozka_obj">Kofola</td>
+                 <td class="cena">18 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">5dcl</td>
+                 <td class="polozka_obj">Kofola</td>
+                 <td class="cena">30 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">2dcl</td>
+                 <td class="polozka_obj">Juice</td>
+                 <td class="cena">45 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">0,4dcl</td>
+                 <td class="polozka_obj">Rum</td>
+                 <td class="cena">70 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="mnozstvi">0,4dcl</td>
+                 <td class="polozka_obj">Zelená</td>
+                 <td class="cena">65 Kč</td>
+                 <td class="kusy">
+                    <form class="formular_objednavka">
+                        <input type="number" name="kusy" max="9" value="0">
+                    </form>
+                 </td>
+             </tr>
+         </tbody>
+     </table>
+</section>
+
+
+  <!-- Sekce FORMULÁŘ REZERVACE -->
+   <form class="formular">
+    <h3>Údaje pro zaslání:</h3>
+    <div class="form_flex formular__CeleJmeno">
+        <div class="form formular__jmeno">
+            <label for="jmeno">Jméno</label>
+            <input type="text" name="jmeno" id="jmeno">
+        </div>
+        <div class="form formular__prijmeni">
+            <label for="prijmeni">Příjmení</label>
+            <input type="text" name="prijmeni" id="prijmeni">
+        </div>
+    </div>
+    <div class="form_flex formular__ulice">
+        <div class="form ulice">
+            <label for="ulice">Ulice</label>
+            <input type="text" name="ulice" id="ulice" required>
+        </div>
+        <div class="form CisloPopisne">
+            <label for="CisloPopisne">Číslo popisné</label>
+            <input type="number" name="CisloPopisne" id="CisloPopisne" maxlength="4" required>
+        </div>
+    </div>
+    <div class="form_flex formular__mesto">
+        <div class="form mesto">
+            <label for="mesto">Město</label>
+            <input type="text" name="mesto" id="mesto" required>
+        </div>
+        <div class="form psc">
+            <label for="psc">PSČ <small>(bez mezery)</small></label>
+            <input type="number" name="psc" id="psc" min="10000" max="99999">
+        </div>
+    </div>
+    <div class="form_flex formular__kontakt">
+        <div class="form formular__email">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form formular__tel">
+            <label for="tel">Telefon</label>
+            <input type="tel" name="tel" id="tel" placeholder="+420" required>
+        </div>
+    </div>
+    <div class="form poznamka_objednavka">
+        <label for="poznamka_obj">Poznámka</label>
+        <textarea name="poznamka_obj" id="poznamka_obj" row="3"></textarea>
+    </div>
+    <!-- Platební metody -->
+    <div class="platba">
+        <h3>Platební metody:</h3>
+        <div class="platebni_metody">
+            <div class="umisteni_platby" >
+                <input type="radio" name="platba" id="karta" value="karta">
+                <label for="karta">Kreditní / debetní karta</label>
+            </div>
+            <div class="umisteni_platby">
+                <input type="radio" name="platba" id="hotovost" value="karta">
+                <label for="hotovost">Hotovost</label>
+            </div>    
+        </div>
+    </div>
+    <!-- Souhlas a info -->
+    <div class="souhlas_obj">
+        <input type="checkbox" name="souhlas" id="souhlas" required>
+        <label for="souhlas">Souhlasím s <a href="#">všeobecnými podmínkami</a></label>
+
+    </div>
+
+    <!-- Tlačítko Odeslat -->
+        <div class="formular__rezervace_tlacitko">
+            <button class="rezervace_tlacitko" type="Submit">Odeslat</button>
+        </div>
+
+   </form>
+   
+
+  
+  <!-- PATIČKA -->
+  <footer class="footer">
+     <div class="footer__adresa">
+      <img src="images/logo-footer.svg" alt="Restaurace Bříško">
+     <p>
+        Restaurace Bříško<br>
+        U pupíku 42<br>
+        123 45 Najedlov
+      </p>
+    </div>
+    <div class="footer__zapati">
+      <div class="footer__menu">
+        <ul>
+          <li><a href="listek.html">Jídelní lístek</a></li>
+          <li><a href="onas.html">O nás</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="rezervace.html">Rezervace</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2025 HTML a CSS kurz od Czechitas</p>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

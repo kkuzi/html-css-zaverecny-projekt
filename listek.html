@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurace Bříško</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<html>
+<body>
+  <div class="stranka">
+
+    <!-- HLAVIČKA -->
+    <header class="header">
+        <a href="index.html"><img class="logo" src="images/logo.svg" alt="Restaurace Bříško"></a>
+
+      <nav>
+        <a class="nav__link" href="listek.html">Jídelní lístek</a>
+        <a class="nav__link" href="onas.html">O nás</a>
+        <a class="nav__link" href="kontakt.html">Kontakt</a>
+        <a class="nav__link" href="rezervace.html">Rezervace</a>
+      </nav>
+  </header>
+
+    <!-- sekce HERO -->
+  <section class="listek_hero">
+    <h1>Jídelní lístek</h1>
+    <p>Vyberte si z naší nabídky.<br>
+    Vaříme jen s láskou a z kvalitních surovin.</p>
+  </section>
+  <!-- Sekce Jídlení lístek -->
+   <section class="listek">
+   <h3 id="snidane">Snídaně</h3>
+    <table class="tabulka">
+        <thead>
+            <tr>
+                <th>Množství</th>
+                <th></th>
+                <th>Cena</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="mnozstvi">1 ks</td>
+                <td class="polozka">Pivní pes</td>
+                <td class="cena">29 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">2 ks</td>
+                <td class="polozka">Vejce na tvrdo s čerstvým celozrnným chlebem</td>
+                <td class="cena">120 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">2 ks</td>
+                <td class="polozka">Vejce míchaná s čerstvým celozrnným chlebem</td>
+                <td class="cena">130 Kč</td>  
+            </tr>
+            <tr>
+                <td class="mnozstvi">1 ks</td>
+                <td class="polozka">Krajíc chleba se šunkou z právě zabitého prasete</td>
+                <td class="cena">180 Kč</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <h3 id="hlavni_jidlo">Hlavní jídlo</h3>
+    <table class="tabulka">
+        <thead>
+            <tr>
+                <th>Množství</th>
+                <th></th>
+                <th>Cena</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="mnozstvi">300g</td>
+                <td class="polozka">Guláš se šesti</td>
+                <td class="cena">145 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">400g</td>
+                <td class="polozka">Vepřo knedlo zelo</td>
+                <td class="cena">180 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">250g</td>
+                <td class="polozka">Kuřecí plátek s broskví</td>
+                <td class="cena">200 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">350g</td>
+                <td class="polozka">Pizza Hawai s ananasem</td>
+                <td class="cena">185 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">250g</td>
+                <td class="polozka">Kuřecí řízek</td>
+                <td class="cena">175 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">250g</td>
+                <td class="polozka">Vepřový řízek</td>
+                <td class="cena">180 Kč</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3 id="gril">Gril</h3>
+    <table class="tabulka">
+        <thead>
+            <tr>
+                <th>Množství</th>
+                <th></th>
+                <th>Cena</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="mnozstvi">250g</td>
+                <td class="polozka">Kuřecí steak</td>
+                <td class="cena">200 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">250g</td>
+                <td class="polozka">Hovězí steak z pravé svíčkové</td>
+                <td class="cena">680 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">200g</td>
+                <td class="polozka">Hermelín na grilu</td>
+                <td class="cena">170 Kč</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Přílohy</h3>
+    <table class="tabulka">
+        <thead>
+            <tr>
+                <th>Množství</th>
+                <th></th>
+                <th>Cena</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="mnozstvi">200g</td>
+                <td class="polozka">Vařené brambory</td>
+                <td class="cena">40 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">200g</td>
+                <td class="polozka">Krokety</td>
+                <td class="cena">50 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">200g</td>
+                <td class="polozka">Hranolky</td>
+                <td class="cena">45 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">200</td>
+                <td class="polozka">Grilovaná zelenina</td>
+                <td class="cena">60 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">1 ks</td>
+                <td class="polozka">Bramboráčky</td>
+                <td class="cena">25 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">1 ks</td>
+                <td class="polozka">Krajíc chleba</td>
+                <td class="cena">10 Kč</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3 id="napoje">Nápoje</h3>
+    <table class="tabulka">
+        <thead>
+            <tr>
+                <th>Množství</th>
+                <th></th>
+                <th>Cena</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="mnozstvi">1l</td>
+                <td class="polozka">Voda</td>
+                <td class="cena">50 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">3dcl</td>
+                <td class="polozka">Kofola</td>
+                <td class="cena">18 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">5dcl</td>
+                <td class="polozka">Kofola</td>
+                <td class="cena">30 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">2dcl</td>
+                <td class="polozka">Juice</td>
+                <td class="cena">45 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">0,4dcl</td>
+                <td class="polozka">Rum</td>
+                <td class="cena">70 Kč</td>
+            </tr>
+            <tr>
+                <td class="mnozstvi">0,4dcl</td>
+                <td class="polozka">Zelená</td>
+                <td class="cena">65 Kč</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+
+  
+  <!-- PATIČKA -->
+  <footer class="footer">
+     <div class="footer__adresa">
+      <img src="images/logo-footer.svg" alt="Restaurace Bříško">
+     <p>
+        Restaurace Bříško<br>
+        U pupíku 42<br>
+        123 45 Najedlov
+      </p>
+    </div>
+    <div class="footer__zapati">
+      <div class="footer__menu">
+        <ul>
+          <li><a href="listek.html">Jídelní lístek</a></li>
+          <li><a href="onas.html">O nás</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="rezervace.html">Rezervace</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2025 HTML a CSS kurz od Czechitas</p>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
